@@ -15,8 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JXe-Nu-vYw" customClass="LogoView" customModule="Logo" customModuleProvider="target">
-                                <rect key="frame" x="87" y="299" width="240" height="240"/>
+                            <view verifyAmbiguity="ignoreSizes" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JXe-Nu-vYw" customClass="LogoView" customModule="Logo" customModuleProvider="target">
+                                <rect key="frame" x="87" y="298" width="240" height="240"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="JXe-Nu-vYw" secondAttribute="height" multiplier="1:1" id="xFX-lt-iIC"/>
@@ -24,8 +24,15 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="JXe-Nu-vYw" firstAttribute="centerY" secondItem="wp4-9V-q6b" secondAttribute="centerY" id="4js-PK-KIw"/>
+                            <constraint firstItem="JXe-Nu-vYw" firstAttribute="centerX" secondItem="wp4-9V-q6b" secondAttribute="centerX" id="oIu-mV-CQz"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Smh-s2-8C9"/>
                     </view>
+                    <connections>
+                        <outlet property="logoView" destination="JXe-Nu-vYw" id="MrO-Iz-MNq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KL4-qp-uo3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

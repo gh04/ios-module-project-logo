@@ -10,6 +10,8 @@ import UIKit
 
 class LogoViewController: UIViewController {
 
+    @IBOutlet weak var logoView: LogoView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
